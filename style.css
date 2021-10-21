@@ -6,11 +6,18 @@
     border: 0;
 }
 
-ion-icon {
-    font-size: 1.5em;
+body {
+    font-family: 'Roboto', sans-serif;
+
+    background: #fafafa;
 }
 
-header {
+ion-icon {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+nav {
     height: 7vh;
 
     display: flex;
@@ -18,10 +25,61 @@ header {
     align-items: center;
 
     padding: 0 5vw;
-
     border: 1px solid #DBDBDB;
+
+    background-color: #fff;
 }
 
-header img {
-    height: 70%;
+nav img {
+    height: 60%;
+
+    cursor: pointer;
+}
+
+.stories {
+    height: 13vh;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.stories article {
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 9%;
+}
+
+.stories article div {
+    height: 80%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stories article div * {
+    border-radius: 50%;
+
+    position: absolute;
+}
+
+.stories article div :first-child {
+    height: 100%;
+}
+
+.stories article div :last-child {
+    height: 85%;
+}
+
+.stories article span {
+    font-size: 0.8em;
 }
