@@ -18,6 +18,12 @@ ion-icon {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
     height: 7vh;
 
     display: flex;
@@ -42,6 +48,8 @@ nav img {
     display: flex;
     align-items: center;
 
+    margin-top: 7vh;
+
     overflow: hidden;
 }
 
@@ -64,6 +72,8 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
 }
 
 .stories article div * {
@@ -83,3 +93,111 @@ nav img {
 .stories article span {
     font-size: 0.8em;
 }
+
+.feed {
+    margin-bottom: 10vh;
+}
+
+.feed article {
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+
+    margin-bottom: 6vh;
+
+    background-color: #fff;
+}
+
+.feed article header {
+    height: 6vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 3%;
+}
+
+.feed article header div {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.feed article header div img {
+    height: 80%;
+    width: auto;
+
+    border-radius: 50%;
+}
+
+.feed article header div span {
+    font-size: 0.8em;
+
+    font-weight: 500;
+
+    margin-left: 10%;
+}
+
+.feed article .photo {
+    width: 100%;
+}
+
+.feed article footer {
+    height: 9vh;
+
+    padding: 0 3%;
+}
+
+.feed article footer .options {
+    height: 47%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feed article footer .options div{
+    width: 23%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed article footer .likes  {
+    height: 53%;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 0.8em;
+}
+
+.feed article footer .likes img {
+    height: 80%;
+
+    border-radius: 50%;
+
+    margin-right: 2%;
+}
+
+#mobile-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 7vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 3%;
+
+    border-top: 1px solid #DBDBDB;
+
+    background-color: #fff;
+}
+
