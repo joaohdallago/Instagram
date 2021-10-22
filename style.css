@@ -13,6 +13,12 @@ body {
     background: #fafafa;
 }
 
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 ion-icon {
     font-size: 1.4em;
     cursor: pointer;
@@ -78,7 +84,7 @@ nav .logo-mobile {
 }
 
 main {
-    margin: 7vh auto 0;
+    margin-top: 7vh;
 }
 
 .stories {
@@ -222,6 +228,20 @@ main {
     margin-right: 2%;
 }
 
+aside {
+    position: sticky;
+    top: 15vh;
+
+    display: none;
+
+    width: 200px;
+    height: 300px;
+
+    margin-left: 2vw;
+
+    background-color: yellow;
+}
+
 #mobile-footer {
     position: fixed;
     left: 0;
@@ -274,5 +294,11 @@ main {
 
     #mobile-footer {
         display: none;
+    }
+}
+
+@media (min-width: 935px) {
+    aside {
+        display: initial;
     }
 }
