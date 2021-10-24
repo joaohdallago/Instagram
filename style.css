@@ -24,6 +24,8 @@ ion-icon {
     cursor: pointer;
 }
 
+/*::::::::::::::::NAV::::::::::::::::*/
+
 nav {
     position: fixed;
     top: 0;
@@ -87,12 +89,15 @@ main {
     margin-top: 7vh;
 }
 
+/*::::::::::::::::STORIES::::::::::::::::*/
+
 .stories {
+    position: relative;
+
     height: 13vh;
 
     display: flex;
     align-items: center;
-
 
     overflow: scroll;
 }
@@ -100,6 +105,17 @@ main {
 .stories::-webkit-scrollbar {
     display: none;
   }
+
+.stories .arrow {
+    position: absolute;
+
+    right: 10px;
+
+    font-size: 26px;
+    color: #fff;
+
+    filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.2));
+}
 
 .stories article {
     height: 80%;
@@ -139,6 +155,8 @@ main {
 .stories article span {
     font-size: 0.8em;
 }
+
+/*::::::::::::::::FEED::::::::::::::::*/
 
 .feed {
     margin-bottom: 10vh;
@@ -228,19 +246,79 @@ main {
     margin-right: 2%;
 }
 
+/*::::::::::::::::SIDEBAR::::::::::::::::*/
+
 aside {
     position: sticky;
     top: 15vh;
 
     display: none;
 
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
 
     margin-left: 2vw;
 
     background-color: yellow;
 }
+
+aside header {
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+
+    background-color: white;
+}
+
+aside header div {
+    margin-left: 10px;
+}
+
+aside h1{
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+aside span{
+    font-size: 14px;
+
+    font-weight: normal;
+
+    color: #8E8E8E;
+}
+
+aside .suggestions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 35px;
+}
+
+aside .suggestions span {
+    font-size: 12px;
+}
+
+aside .suggestions button {
+    font-weight: 500;
+
+    background-color: transparent;
+} 
+
+aside .suggestions .left {
+    height: 100%;
+
+    display: flex;
+}
+
+aside .suggestions .left div {
+    margin-left: 10px;
+}
+
+
+/*::::::::::::::::MOBILE::::::::::::::::*/
 
 #mobile-footer {
     position: fixed;
@@ -261,9 +339,23 @@ aside {
     background-color: #fff;
 }
 
+
+
+/*::::::::::::::::SUPPORT::::::::::::::::*/
+
 .no-mobile {
     display: none;
 }
+
+.profile-pic {
+    height: 100%;
+    width: auto;
+
+    border-radius: 50%;
+}
+
+
+/*::::::::::::::::MEDIA QUERY::::::::::::::::*/
 
 @media (min-width: 614px) {
 
@@ -288,6 +380,8 @@ aside {
     .stories {
         margin-bottom: 5vh;
         border: 1px solid #DBDBDB;
+
+        overflow: hidden;
 
         background-color: #fff;
     }
