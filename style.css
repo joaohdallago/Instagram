@@ -15,6 +15,7 @@ body {
 
 .container {
     width: 100%;
+
     display: flex;
     justify-content: center;
 }
@@ -33,7 +34,7 @@ nav {
     right: 0;
     z-index: 1;
 
-    height: 7vh;
+    height: 54px;
 
     display: flex;
     justify-content: space-between;
@@ -66,12 +67,12 @@ nav .logo img {
 nav input {
     all: unset;
 
-    width: 215px;
-    height: 26px;
-
     display: flex;
     align-items: center;
     text-align: center;
+
+    width: 215px;
+    height: 26px;
 
     border: solid 1px #DBDBDB;
     border-radius: 3px;
@@ -86,7 +87,7 @@ nav .logo-mobile {
 }
 
 main {
-    margin-top: 7vh;
+    margin-top: 54px;
 }
 
 /*::::::::::::::::STORIES::::::::::::::::*/
@@ -94,17 +95,13 @@ main {
 .stories {
     position: relative;
 
-    height: 13vh;
+    height: 118px;
 
     display: flex;
     align-items: center;
 
-    overflow: scroll;
+    overflow: hidden;
 }
-
-.stories::-webkit-scrollbar {
-    display: none;
-  }
 
 .stories .arrow {
     position: absolute;
@@ -118,18 +115,19 @@ main {
 }
 
 .stories article {
-    height: 80%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    margin-left: 9%;
+    margin-left: 14px;
 }
 
 .stories article div {
-    height: 80%;
+    width: 100%;
+    height: 100%;
 
     position: relative;
 
@@ -140,20 +138,19 @@ main {
 
 .stories article div * {
     border-radius: 50%;
-
-    position: absolute;
 }
 
 .stories article div :first-child {
-    height: 100%;
+    width: 66px;
 }
 
 .stories article div :last-child {
-    height: 85%;
+    height: 56px;
+    position: absolute;
 }
 
 .stories article span {
-    font-size: 0.8em;
+    font-size: 12px;
 }
 
 /*::::::::::::::::FEED::::::::::::::::*/
@@ -258,8 +255,6 @@ aside {
     height: 400px;
 
     margin-left: 2vw;
-
-    background-color: yellow;
 }
 
 aside header {
@@ -267,8 +262,6 @@ aside header {
     align-items: center;
 
     height: 50px;
-
-    background-color: white;
 }
 
 aside header div {
@@ -295,6 +288,8 @@ aside .suggestions {
     align-items: center;
 
     height: 35px;
+
+    margin-bottom: 10px;
 }
 
 aside .suggestions span {
@@ -317,6 +312,9 @@ aside .suggestions .left div {
     margin-left: 10px;
 }
 
+aside .suggestions .follow {
+    color: #139EF2;
+} 
 
 /*::::::::::::::::MOBILE::::::::::::::::*/
 
@@ -380,8 +378,6 @@ aside .suggestions .left div {
     .stories {
         margin-bottom: 5vh;
         border: 1px solid #DBDBDB;
-
-        overflow: hidden;
 
         background-color: #fff;
     }
