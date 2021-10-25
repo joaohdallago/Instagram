@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     border: 0;
+
+    background-color: transparent;
 }
 
 body {
@@ -19,6 +21,19 @@ body {
 
 ion-icon {
     font-size: 22px;
+}
+
+h1, span, p {
+    font-size: 14px;
+}
+
+h1, strong {
+    font-weight: 500;
+}
+
+em {
+    font-style: normal;
+    color: #139EF2;
 }
 
 
@@ -78,9 +93,7 @@ nav input {
 }
 
 nav .logo-mobile {
-    height: 60%;
-
-    cursor: pointer;
+    width: 103px;
 }
 
 main {
@@ -124,9 +137,6 @@ main {
 }
 
 .stories article div {
-    width: 100%;
-    height: 100%;
-
     position: relative;
 
     display: flex;
@@ -154,16 +164,15 @@ main {
 /*::::::::::::::::FEED::::::::::::::::*/
 
 .feed {
-    margin-bottom: 10vh;
+    margin-bottom: 114px;
 }
 
 .feed article {
-    border-top: 1px solid #DBDBDB;
-    border-bottom: 1px solid #DBDBDB;
-
-    margin-bottom: 8vh;
+    margin-bottom: 60px;
 
     background-color: #fff;
+
+    border: 1px solid #DBDBDB;
 }
 
 .feed article header {
@@ -173,64 +182,55 @@ main {
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 3%;
+    padding: 0 18px;
 }
 
 .feed article header div {
-    height: 100%;
-
     display: flex;
     align-items: center;
-
 }
 
 .feed article header div img {
-    height: 65%;
-    width: auto;
+    width: 32px;
 
     border-radius: 50%;
 }
 
-.feed article header div span {
-    font-size: 0.8em;
-
-    font-weight: 500;
-
-    margin-left: 10%;
+.feed article header div h1 {
+    margin-left: 15px;
 }
 
 .feed article .photo, .feed article video {
     width: 100%;
+
+    margin-bottom: 7px;
 }
 
-.feed article footer {
-    height: 76px;
 
-    padding: 0 3%;
+.feed article footer .comments,
+.feed article footer .likes,
+.feed article footer .options    {
+    padding: 0 15px;
+
+    margin-bottom: 10px;
 }
 
 .feed article footer .options {
-    height: 47%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .feed article footer .options div{
-    width: 23%;
+    width: 100px;
 
     display: flex;
     justify-content: space-between;
 }
 
 .feed article footer .likes  {
-    height: 53%;
-
     display: flex;
     align-items: center;
-
-    font-size: 0.8em;
 }
 
 .feed article footer .likes img {
@@ -238,14 +238,84 @@ main {
 
     border-radius: 50%;
 
-    margin-right: 2%;
+    margin-right: 7px;
 }
+
+
+.feed article footer .comments .comment {
+    margin-bottom: 3px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feed article footer .comments .like {
+    font-size: 14px;
+}
+
+.feed article footer .comments button {
+    font-size: 14px;
+
+    margin-bottom: 5px;
+
+    color: #8E8E8E;
+}
+
+.feed article footer .comments span {
+    font-size: 11px;
+
+    color: #8E8E8E;
+}
+
+.feed article footer .new-comment {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 15px;
+    border-top: 1px solid #DBDBDB;
+}
+
+.feed article footer .new-comment div {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.feed article footer .new-comment div ion-icon {
+    font-size: 28px;
+}
+
+.feed article footer .new-comment input {
+    all: unset;
+    
+    width: 100%;
+    height: 100%;
+
+    margin-left: 15px;
+}
+
+.feed article footer .new-comment button {
+   color: #B2DFFC;
+}
+
+.feed article footer .new-comment button:hover {
+    color: #0095F6;
+
+    transition-duration: 300ms;
+ }
 
 /*::::::::::::::::SIDEBAR::::::::::::::::*/
 
 aside {
     position: sticky;
-    top: 15vh;
+    top: 134px;
 
     display: none;
 
@@ -302,8 +372,6 @@ aside .suggestions span {
 
 aside .suggestions button {
     font-weight: 500;
-
-    background-color: transparent;
 } 
 
 aside .suggestions .left {
@@ -362,7 +430,7 @@ aside footer .menu {
 }
 
 
-img, ion-icon, h1, h2, strong, video {
+img, ion-icon, h1, h2, strong, video, button {
     cursor: pointer;
 }
 
