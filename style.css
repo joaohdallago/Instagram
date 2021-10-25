@@ -49,13 +49,17 @@ nav {
     height: 54px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    padding: 0 5vw;
+    padding: 0 15px;
     border: 1px solid #DBDBDB;
 
     background-color: #fff;
+}
+
+nav .container-nav {
+    width: 934px;
 }
 
 nav div {
@@ -322,7 +326,7 @@ aside {
     width: 300px;
     height: fit-content;
 
-    margin-left: 2vw;
+    margin-left: 29px;
 }
 
 aside header {
@@ -457,7 +461,7 @@ img, ion-icon, h1, h2, strong, video, button {
     }
 
     .stories {
-        margin-bottom: 5vh;
+        margin-bottom: 24px;
         border: 1px solid #DBDBDB;
 
         background-color: #fff;
