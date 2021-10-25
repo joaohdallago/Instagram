@@ -169,7 +169,7 @@ main {
 }
 
 .feed article header {
-    height: 6vh;
+    height: 60px;
 
     display: flex;
     justify-content: space-between;
@@ -187,7 +187,7 @@ main {
 }
 
 .feed article header div img {
-    height: 80%;
+    height: 65%;
     width: auto;
 
     border-radius: 50%;
@@ -206,7 +206,7 @@ main {
 }
 
 .feed article footer {
-    height: 9vh;
+    height: 76px;
 
     padding: 0 3%;
 }
@@ -236,7 +236,7 @@ main {
 }
 
 .feed article footer .likes img {
-    height: 80%;
+    width: 25px;
 
     border-radius: 50%;
 
